@@ -187,8 +187,8 @@ def tools_data(num):
 
             dis_params(1, key_time)
             dis_params(2, key_hex)
-            dis_params(3, str(data_json["frq"]))
-            dis_params(4, "1")
+            dis_params(3, str(data_json["freq"]))
+            dis_params(4, str(data_json["key_cnt"]))
 
     data_socket.close()
     set_dis_status(4)
