@@ -208,6 +208,7 @@ def ir_tools_main():
 
 
 if __name__ == '__main__':
+    print(sys.platform)
     app = QApplication(sys.argv)
     MainWindow = ir_tools_handle()
     MainWindow.show()

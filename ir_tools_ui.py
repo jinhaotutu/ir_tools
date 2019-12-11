@@ -8,7 +8,7 @@
 
 
 from PyQt5 import QtCore, QtGui, QtWidgets
-
+import sys
 
 class Ui_mainWindow(object):
     def setupUi(self, mainWindow):
@@ -20,42 +20,60 @@ class Ui_mainWindow(object):
         self.label.setGeometry(QtCore.QRect(310, 10, 211, 41))
         font = QtGui.QFont()
         font.setFamily("Songti SC")
-        font.setPointSize(18)
+        if sys.platform == "win32":
+            font.setPointSize(14)
+        else:
+            font.setPointSize(16)
         self.label.setFont(font)
         self.label.setObjectName("label")
         self.label_2 = QtWidgets.QLabel(self.centralwidget)
         self.label_2.setGeometry(QtCore.QRect(40, 50, 91, 31))
         font = QtGui.QFont()
         font.setFamily("Songti SC")
-        font.setPointSize(16)
+        if sys.platform == "win32":
+            font.setPointSize(12)
+        else:
+            font.setPointSize(16)
         self.label_2.setFont(font)
         self.label_2.setObjectName("label_2")
         self.label_3 = QtWidgets.QLabel(self.centralwidget)
         self.label_3.setGeometry(QtCore.QRect(40, 280, 171, 31))
         font = QtGui.QFont()
         font.setFamily("Songti SC")
-        font.setPointSize(16)
+        if sys.platform == "win32":
+            font.setPointSize(12)
+        else:
+            font.setPointSize(16)
         self.label_3.setFont(font)
         self.label_3.setObjectName("label_3")
         self.label_4 = QtWidgets.QLabel(self.centralwidget)
         self.label_4.setGeometry(QtCore.QRect(40, 500, 171, 31))
         font = QtGui.QFont()
         font.setFamily("Songti SC")
-        font.setPointSize(16)
+        if sys.platform == "win32":
+            font.setPointSize(12)
+        else:
+            font.setPointSize(16)
         self.label_4.setFont(font)
         self.label_4.setObjectName("label_4")
         self.label_5 = QtWidgets.QLabel(self.centralwidget)
         self.label_5.setGeometry(QtCore.QRect(310, 500, 171, 31))
         font = QtGui.QFont()
         font.setFamily("Songti SC")
-        font.setPointSize(16)
+        if sys.platform == "win32":
+            font.setPointSize(12)
+        else:
+            font.setPointSize(16)
         self.label_5.setFont(font)
         self.label_5.setObjectName("label_5")
         self.label_6 = QtWidgets.QLabel(self.centralwidget)
         self.label_6.setGeometry(QtCore.QRect(580, 500, 71, 31))
         font = QtGui.QFont()
         font.setFamily("Songti SC")
-        font.setPointSize(16)
+        if sys.platform == "win32":
+            font.setPointSize(12)
+        else:
+            font.setPointSize(16)
         self.label_6.setFont(font)
         self.label_6.setObjectName("label_6")
         self.listWidget = QtWidgets.QListWidget(self.centralwidget)
