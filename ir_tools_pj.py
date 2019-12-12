@@ -195,7 +195,8 @@ def tools_data(num):
     time.sleep(5)
     print("data thread exit")
 
-
+global find_thread
+global data_thread
 find_thread = threading.Thread(target=tools_find,args=(33,))
 data_thread = threading.Thread(target=tools_data,args=(22,))
 
@@ -216,3 +217,7 @@ if __name__ == '__main__':
     ir_tools_main()
     sys.exit(app.exec_())
     print("app exit")
+
+
+# out app:
+#
